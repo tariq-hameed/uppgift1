@@ -1,0 +1,16 @@
+.navBar {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: royalblue;
+}
+
+.logotype{
+    width: 100px;
+    cursor: pointer;
+}
+
+.recipe{
+    grid-column: 3/4;
+    align-self: center;
+    cursor: pointer;
+}
