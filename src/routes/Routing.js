@@ -2,6 +2,7 @@ import React from 'react'
 import { RecipeView } from '../view/RecipeView'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { HomeView } from '../view/HomeView'
+import { SigninView } from '../view/SigninView'
    
 
 export const Routing = (props) => {
@@ -11,6 +12,7 @@ export const Routing = (props) => {
             <Switch>
                    
                 <Route exact path="/recipe" component={RecipeView} />
+                <Route exact path="/signin" component={SigninView} />
                 <Route component={HomeView} />
             </Switch>
             

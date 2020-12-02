@@ -10,7 +10,19 @@
 }
 
 .recipe{
-    grid-column: 3/4;
+    grid-column: 2/3;
+    align-self: center;
+    cursor: pointer;
+}
+
+.signin{
+    grid-column: 10/11;
+    align-self: center;
+    cursor: pointer;
+}
+
+.profile{
+    grid-column: 9/10;
     align-self: center;
     cursor: pointer;
 }

@@ -1,0 +1,14 @@
+.profileWrapper{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.profileImage {
+    width: 5vh;
+    border-radius: 50%;
+    grid-column: 1/5;
+}
+.displayedUserName{
+    align-self: center;
+    grid-column: 7/11;
+}
