@@ -1,5 +1,5 @@
 import React from 'react'
-import { RecipeView } from '../view/RecipeView'
+import { AboutUsView } from '../view/AboutUsView'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { HomeView } from '../view/HomeView'
 import { SigninView } from '../view/SigninView'
@@ -11,7 +11,7 @@ export const Routing = (props) => {
             {props.children}
             <Switch>
                    
-                <Route exact path="/recipe" component={RecipeView} />
+                <Route exact path="/aboutus" component={AboutUsView} />
                 <Route exact path="/signin" component={SigninView} />
                 <Route component={HomeView} />
             </Switch>

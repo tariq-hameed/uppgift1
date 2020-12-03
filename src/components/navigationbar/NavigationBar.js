@@ -20,7 +20,7 @@ export const NavigationBar = () => {
         <div className="navBar">
             <img onClick={() =>history.push('/')}
                 className="logotype" src={LogoType} alt="Error .."/>
-            <span onClick={()=>history.push('/recipe')} className="recipe">Recipe</span>            
+            <span onClick={()=>history.push('/aboutus')} className="recipe">About Us</span>            
             {displayUserIfAuthenticated()}
         </div>
     )
