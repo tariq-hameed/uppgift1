@@ -4,6 +4,7 @@ import LogoType from '../../shared/images/logotype.svg'
 import { useHistory} from 'react-router-dom'
 import { UserContext } from '../../shared/global/provider/UserProvider'
 import { Profile } from '../profile/Profile'
+import RoutingPath from '../../routes/RoutingPath'
 
 export const NavigationBar = () => {
     
@@ -13,14 +14,14 @@ export const NavigationBar = () => {
     const displayUserIfAuthenticated = () => {
 		return authenticatedUser
 			? <div className="profile"><Profile /></div>
-            : <span onClick={()=>history.push('/signin')} className="signin">SignIn</span>
+            : <span onClick={()=>history.push(RoutingPath.signInView)} className="signin">SignIn</span>
     }
 
     return (
         <div className="navBar">
-            <img onClick={() =>history.push('/')}
+            <img onClick={() =>history.push(RoutingPath.homeView)}
                 className="logotype" src={LogoType} alt="Error .."/>
-            <span onClick={()=>history.push('/aboutus')} className="recipe">About Us</span>            
+            <span onClick={()=>history.push(RoutingPath.aboutUsView)} className="recipe">About Us</span>            
             {displayUserIfAuthenticated()}
 
             
