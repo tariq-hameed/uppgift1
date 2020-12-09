@@ -22,6 +22,9 @@ export const NavigationBar = () => {
                 className="logotype" src={LogoType} alt="Error .."/>
             <span onClick={()=>history.push('/aboutus')} className="recipe">About Us</span>            
             {displayUserIfAuthenticated()}
+
+            
         </div>
+        
     )
 }
